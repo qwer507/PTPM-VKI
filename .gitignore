@@ -1,14 +1,24 @@
-# Виртуальное окружение
+# --- Настройки PyCharm / IntelliJ IDEA ---
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# --- Кэш Python и компилированные файлы ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Виртуальное окружение ---
+.venv/
 venv/
 ENV/
 env/
 
-# Кэш компиляции Python (создается при запусках unittest)
-**/__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Локальные системные файлы операционных систем
-.DS_Store
-Thumbs.db
+# --- Файлы конфигурации и секреты (не для GitHub!) ---
+.env
+*.log
