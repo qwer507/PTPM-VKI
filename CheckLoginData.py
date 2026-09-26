@@ -1,23 +1,68 @@
 import re
+import logging
+import hashlib
+import sys
+
+log_format = "%(asctime)s | [%(levelname)-7s] | %(message)s"
+date_format = "%Y-%m-%d %H:%M:%S"
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    format=log_format,
+    datefmt=date_format,
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler("logs/file_txt.log", encoding="utf-8")
+    ]
+)
+
+logging.info("Логгер успешно сконфигурирован")
+logging.info("Приложение запущено")
+
+
+def hash_password(password):
+    password_bytes = password.encode('utf-8')
+    hash_object = hashlib.sha256(password_bytes)
+    return hash_object.hexdigest()
 
 class Authorization:
-    def Start(self):
+    def start(self):
+        logging.info("Запущена функция запроса данных для регистрации")
+
         login = input("Введите логин:")
         password = input("Введите пароль:")
         check_password = input("Введите пароль повторно:")
-        result = self.Validation(login, password, check_password)
+
+        logging.info("Данные получены")
+
+        result = self.validation(login, password, check_password)
+
+        logging.info("Вывод результатов")
+
         print(result[0])
         print(result[1])
 
-    def Validation(self,login,password,check_password):
+        if result[0]:
+            logging.info(f"Логин: {login}, Пароль: {hash_password(password)} | Регистрация успешна завершена")
+        else:
+            logging.error(f"Логин: {login}, Пароль: {hash_password(password)} | Ошибка: {result[1]}")
+
+    def validation(self,login,password,check_password):
+        logging.info("Запуск проверки на валидацию")
         try:
-            check_login = self.CheckLogin(login)
-            check_password = self.CheckPassword(password,check_password)
+            logging.info("Проверка валидации логина")
+            check_login = self.checkLogin(login)
+
+            logging.info("Проверка валидации пароля")
+            check_password = self.checkPassword(password,check_password)
+
+            logging.info(f"Валидация успешна пройдена")
             return True,""
         except ValueError as e:
+            logging.error(f"Валидация не пройдена")
             return False,e
 
-    def CheckLogin(self,login):
+    def checkLogin(self,login):
         black_list = ("admin","manager","user")
         email_regex = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         phone_regex = r"^\+\d-\d{3}-\d{3}-\d{4}$"
@@ -33,7 +78,7 @@ class Authorization:
         return True
 
 
-    def CheckPassword(self,password,check_password):
+    def checkPassword(self,password,check_password):
         password_regex = r"^[а-яёА-ЯЁ0-9\W_]+$"
         upper_regex = r"[А-ЯЁ]"
         lower_regex = r"[а-яё]"
@@ -57,4 +102,4 @@ class Authorization:
 
 
 auth = Authorization()
-auth.Start()
+auth.start()
