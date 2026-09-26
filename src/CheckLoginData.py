@@ -12,7 +12,7 @@ logging.basicConfig(
     datefmt=date_format,
     handlers=[
         logging.StreamHandler(sys.stdout),
-        logging.FileHandler("logs/file_txt.log", encoding="utf-8")
+        logging.FileHandler("../logs/file_txt.log", encoding="utf-8")
     ]
 )
 
