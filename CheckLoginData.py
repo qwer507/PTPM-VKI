@@ -64,7 +64,7 @@ class Authorization:
 
     def checkLogin(self,login):
         black_list = ("admin","manager","user")
-        email_regex = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        email_regex = r"^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         phone_regex = r"^\+\d-\d{3}-\d{3}-\d{4}$"
         login_regex = r"^[a-zA-Z0-9_]+$"
         if re.match(email_regex, login) or re.match(phone_regex, login):
@@ -73,7 +73,7 @@ class Authorization:
             raise ValueError("Логин должен быть из пяти или больше символов")
         if not re.match(login_regex, login):
             raise ValueError("Логин должен содержать только латинские буквы, цифры и нижнее подчеркивание")
-        if login in black_list:
+        if login.lower() in black_list:
             raise ValueError("Этот логин нельзя использовать")
         return True
 
