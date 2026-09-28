@@ -73,7 +73,7 @@ class Authorization:
             raise ValueError("Логин должен быть из пяти или больше символов")
         if not re.match(login_regex, login):
             raise ValueError("Логин должен содержать только латинские буквы, цифры и нижнее подчеркивание")
-        if login in black_list:
+        if login.lower() in black_list:
             raise ValueError("Этот логин нельзя использовать")
         return True
 
