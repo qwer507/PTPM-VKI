@@ -8,6 +8,7 @@ class TestAuthorization(unittest.TestCase):
     def setUp(self):
         self.auth = Authorization()
 
+
     def tearDown(self):
         self.auth = None
 
