@@ -1,17 +1,17 @@
 import unittest
 from src.CheckLoginData import Authorization
 
-class TestAuthorization(unittest.TestCase):
+class AuthorizationTestBase(unittest.TestCase):
     CORRECT_LOGIN = "rwfwiurnj"
     CORRECT_PASSWORD = "акцацкВ1!"
 
     def setUp(self):
         self.auth = Authorization()
 
-
     def tearDown(self):
         self.auth = None
 
+class TestAuthorizationLogin(AuthorizationTestBase):
     def test_email_login(self):
         login = "saddagwr@mail.ru"
         self.assertTrue(self.auth.checkLogin(login))
@@ -58,6 +58,8 @@ class TestAuthorization(unittest.TestCase):
         login = "adfg_hfe1"
         self.assertTrue(self.auth.checkLogin(login))
 
+
+class TestAuthorizationPassword(AuthorizationTestBase):
     def test_six_len_password(self):
         password = "кпуЕ1!"
         with self.assertRaisesRegex(ValueError,"Пароль должен быть из семи или больше символов"):

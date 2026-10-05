@@ -12,8 +12,9 @@ def calculate_delivery_cost(weight: float, distance: int, package_type: str, is_
     if weight < 0.1 or weight > 50.0 or distance < 1 or distance > 5000:
         return -1, "0000-00-00"
 
+
     valid_types = ["обычный", "хрупкий", "опасный"]
-    if package_type not in valid_types:
+    if package_type not in valid_types: # чувствительность к регистру
         return -1, "0000-00-00"
 
     # Базовые тарифные сетки
@@ -33,7 +34,7 @@ def calculate_delivery_cost(weight: float, distance: int, package_type: str, is_
         total_cost += 1000
 
     if is_express:
-        total_cost *= 0.5
+        total_cost *= 0.5 #????
 
     # Логика расчета времени транспортировки
     current_date = datetime.date(2026, 9, 3)  # Фиксированная дата отправки
@@ -41,7 +42,7 @@ def calculate_delivery_cost(weight: float, distance: int, package_type: str, is_
     days_needed = max(1, distance // 500)
 
     if is_express:
-        days_needed = days_needed // 2
+        days_needed = days_needed // 2 # при дистанции меньше 500 = 0
 
     delivery_date = current_date + datetime.timedelta(days=days_needed)
 
