@@ -1,10 +1,15 @@
 import re
 import logging
 import hashlib
+import os
 import sys
 
 log_format = "%(asctime)s | [%(levelname)-7s] | %(message)s"
 date_format = "%Y-%m-%d %H:%M:%S"
+
+log_dir = os.path.join(os.path.dirname(__file__), "..", "logs")
+os.makedirs(log_dir, exist_ok=True)
+log_file = os.path.join(log_dir, "file_txt.log")
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -12,7 +17,7 @@ logging.basicConfig(
     datefmt=date_format,
     handlers=[
         logging.StreamHandler(sys.stdout),
-        logging.FileHandler("../logs/file_txt.log", encoding="utf-8")
+        logging.FileHandler(log_file, encoding="utf-8")
     ]
 )
 
@@ -51,10 +56,10 @@ class Authorization:
         logging.info("Запуск проверки на валидацию")
         try:
             logging.info("Проверка валидации логина")
-            check_login = self.checkLogin(login)
+            try_login = self.checkLogin(login)
 
             logging.info("Проверка валидации пароля")
-            check_password = self.checkPassword(password,check_password)
+            try_password = self.checkPassword(password,check_password)
 
             logging.info(f"Валидация успешна пройдена")
             return True,""
@@ -100,6 +105,6 @@ class Authorization:
             raise ValueError("Пароли не совпадают")
         return True
 
-
-auth = Authorization()
-auth.start()
+if __name__ == "__main__":
+    auth = Authorization()
+    auth.start()

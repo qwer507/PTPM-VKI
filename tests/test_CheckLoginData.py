@@ -98,7 +98,7 @@ class TestAuthorization(unittest.TestCase):
             self.auth.checkPassword(password, password)
 
     def test_password_different_check_password(self):
-        password = "уаупупК1"
+        password = "уаупупК1!"
         check_password = "123"
         with self.assertRaisesRegex(ValueError, "Пароли не совпадают"):
             self.auth.checkPassword(password, check_password)
