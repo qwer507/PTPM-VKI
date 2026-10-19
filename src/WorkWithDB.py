@@ -2,9 +2,11 @@ import sqlite3
 import os
 
 class WorkWithDB:
-    DB_PATH = os.path.join(os.path.dirname(__file__), "..", "DB", "auth.db")
-    def __init__(self):
-        self.con = sqlite3.connect(self.DB_PATH)
+    DEFAULT_DB_PATH = os.path.join(os.path.dirname(__file__), "..", "DB", "auth.db")
+    def __init__(self, db_path = None):
+        if db_path is None:
+            db_path = self.DEFAULT_DB_PATH
+        self.con = sqlite3.connect(db_path)
 
         self.cursor = self.con.cursor()
         self.cursor.execute(""" CREATE TABLE IF NOT EXISTS AuthLog(

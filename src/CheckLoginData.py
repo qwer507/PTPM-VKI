@@ -44,7 +44,7 @@ class Authorization:
             return True,""
         except ValueError as e:
             logging.error(f"Валидация не пройдена")
-            return False,e
+            return False,str(e)
 
     def checkLogin(self,login):
         black_list = ("admin","manager","user")
