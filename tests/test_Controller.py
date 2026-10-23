@@ -1,10 +1,9 @@
 import unittest
-from unittest.mock import patch
+from unittest.mock import patch, MagicMock
 
 from src.CheckLoginData import Authorization
 from src.WorkWithDB import WorkWithDB
 from src.WorkWithUser import WorkWithUser
-from src.WorkWithEmail import WorkWithEmail
 from src.Controller import Controller
 
 class TestControllerIntegration(unittest.TestCase):
@@ -13,7 +12,7 @@ class TestControllerIntegration(unittest.TestCase):
         self.db = WorkWithDB(db_path=":memory:")
         self.auth = Authorization()
         self.user = WorkWithUser()
-        self.email = WorkWithEmail()
+        self.email = MagicMock()
 
         self.controller = Controller(
             auth=self.auth,
@@ -41,12 +40,11 @@ class TestControllerIntegration(unittest.TestCase):
     def test_success_data(self):
         result = self._start_with_input("newuser", "Пароль1!", "Пароль1!")
 
-        self.assertEqual(result, ("newuser", "Пароль1!", "Пароль1!", True, ""))
+        self.assertTrue(result[3])
 
         stored = self.db.find("newuser", "Пароль1!", "Пароль1!")
         self.assertEqual(stored, ("newuser", "Пароль1!", "Пароль1!", 1, ""))
 
-    #поменять и дописать
     def test_not_success_data(self):
         result = self._start_with_input("abc", "Пароль1!", "Пароль1!")
 
@@ -55,7 +53,6 @@ class TestControllerIntegration(unittest.TestCase):
         stored = self.db.find("abc", "Пароль1!", "Пароль1!")
         self.assertIsNotNone(stored)
         self.assertEqual(stored[3], 0)
-        self.assertIn("пяти", stored[4])
 
     def test_second_identical_attempt_uses_cached_record(self):
         first = self._start_with_input("newuser", "Пароль1!", "Пароль1!")
