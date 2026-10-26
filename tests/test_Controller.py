@@ -21,11 +21,7 @@ class TestControllerIntegration(unittest.TestCase):
             email=self.email,
         )
 
-        self._sleep_patcher = patch("src.WorkWithEmail.time.sleep")
-        self._sleep_patcher.start()
-
     def tearDown(self):
-        self._sleep_patcher.stop()
         self.db.con.close()
 
     def _start_with_input(self, login, password, check):

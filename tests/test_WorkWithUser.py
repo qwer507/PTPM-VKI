@@ -14,6 +14,12 @@ class TestWorkWithUserGetData(unittest.TestCase):
 
         self.assertEqual(result, ("alice", "secret", "secret"))
 
+    def test_returns_empty(self):
+        with patch("builtins.input", side_effect=["", "", ""]):
+            result = self.user.getData()
+
+        self.assertEqual(result, ("", "", ""))
+
 
 if __name__ == "__main__":
     unittest.main()
