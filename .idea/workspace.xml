@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="880ca446-31c8-4274-9560-e3159efc9e7e" name="Changes" comment="cahnge tests">
+      <change afterPath="$PROJECT_DIR$/src/Converter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_Converter.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lab_3" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;qwer507&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/qwer507/PTPM-VKI.git&quot;,
+    &quot;accountId&quot;: &quot;15b7b3eb-2b4f-47fe-8113-71462528dec5&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3JcazuO5OTZafowobHh3JIfmg3f" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests in test_CheckLoginData.py.executor": "Run",
+    "Python tests.Python tests in test_Controller.py.executor": "Run",
+    "Python tests.Python tests in test_Converter.py.executor": "Run",
+    "Python tests.Python tests in test_Delivery.py.executor": "Run",
+    "Python tests.Python tests in test_WorkWithDB.py.executor": "Run",
+    "Python tests.Python tests in test_WorkWithUser.py.executor": "Run",
+    "Python.CheckLoginData.executor": "Run",
+    "Python.create.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Lab__4"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\тестирование\4 курс\repo\src" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-1f77c24022e5-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.26830.99" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="880ca446-31c8-4274-9560-e3159efc9e7e" name="Changes" comment="" />
+      <created>1789963076429</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789963076429</updated>
+    </task>
+    <task id="LOCAL-00001" summary="in work">
+      <option name="closed" value="true" />
+      <created>1789967799509</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1789967799509</updated>
+    </task>
+    <task id="LOCAL-00002" summary="change work, finish Authorization">
+      <option name="closed" value="true" />
+      <created>1790306881662</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1790306881662</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add hash password and logger">
+      <option name="closed" value="true" />
+      <created>1790393222872</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1790393222872</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create dir tests and src, merge lab 1 into lab 2">
+      <option name="closed" value="true" />
+      <created>1790400578805</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1790400578805</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test in work">
+      <option name="closed" value="true" />
+      <created>1790402606126</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1790402606126</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix code">
+      <option name="closed" value="true" />
+      <created>1790563826843</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1790563826843</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix code, add new tests">
+      <option name="closed" value="true" />
+      <created>1790565880097</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1790565880097</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix code">
+      <option name="closed" value="true" />
+      <created>1790566140087</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1790566140087</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix code">
+      <option name="closed" value="true" />
+      <created>1791165688842</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1791165688842</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add tests Delivery, add Отчет">
+      <option name="closed" value="true" />
+      <created>1791170094633</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1791170094633</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add __init__.py">
+      <option name="closed" value="true" />
+      <created>1792376049416</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1792376049416</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add CheckLoginData.py, WorkWithDB.py, WorkWithUser.py, WorkWithEmail.py, Controller.py">
+      <option name="closed" value="true" />
+      <created>1792380895766</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1792380895766</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add tests">
+      <option name="closed" value="true" />
+      <created>1792387197799</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1792387197799</updated>
+    </task>
+    <task id="LOCAL-00014" summary="finish tests">
+      <option name="closed" value="true" />
+      <created>1792723504169</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1792723504169</updated>
+    </task>
+    <task id="LOCAL-00015" summary="cahnge tests">
+      <option name="closed" value="true" />
+      <created>1792980162228</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1792980162228</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="in work" />
+    <MESSAGE value="change work, finish Authorization" />
+    <MESSAGE value="add hash password and logger" />
+    <MESSAGE value="create dir tests and src, merge lab 1 into lab 2" />
+    <MESSAGE value="test in work" />
+    <MESSAGE value="fix code, add new tests" />
+    <MESSAGE value="fix code" />
+    <MESSAGE value="add tests Delivery, add Отчет" />
+    <MESSAGE value="add __init__.py" />
+    <MESSAGE value="add CheckLoginData.py, WorkWithDB.py, WorkWithUser.py, WorkWithEmail.py, Controller.py" />
+    <MESSAGE value="add tests" />
+    <MESSAGE value="finish tests" />
+    <MESSAGE value="cahnge tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="cahnge tests" />
+  </component>
+</project>
