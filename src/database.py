@@ -3,7 +3,7 @@ import os
 
 class Database:
     DEFAULT_DB_PATH = os.path.join(os.path.dirname(__file__), "..", "DB", "auth.db")
-
+    # Сделать исключения, добавить тесты
     def __init__(self, db_path=None):
         if db_path is None:
             db_path = self.DEFAULT_DB_PATH
@@ -19,11 +19,11 @@ class Database:
         self.con.commit()
 
     def get_by_id(self, id_com):
-        self.cursor.execute("SELECT * FROM comments WHERE id = ?", id_com)
+        self.cursor.execute("SELECT * FROM comments WHERE id = ?", [id_com])
         return self.cursor.fetchone()
 
     def get_by_name(self, user_name):
-        self.cursor.execute("SELECT * FROM comments WHERE name = ?", user_name)
+        self.cursor.execute("SELECT * FROM comments WHERE name = ?", [user_name])
         return self.cursor.fetchall()
 
     def add(self, id_com: int, user_name : str, message: str):
