@@ -1,5 +1,5 @@
 import unittest
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch, Mock
 
 from src.CheckLoginData import Authorization
 from src.WorkWithDB import WorkWithDB
@@ -12,7 +12,7 @@ class TestControllerIntegration(unittest.TestCase):
         self.db = WorkWithDB(db_path=":memory:")
         self.auth = Authorization()
         self.user = WorkWithUser()
-        self.email = MagicMock()
+        self.email = Mock()
 
         self.controller = Controller(
             auth=self.auth,
