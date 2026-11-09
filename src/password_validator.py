@@ -7,8 +7,8 @@ class PasswordValidator:
         if password.find(" ") != -1:
             raise ValueError("Пароль не должен содержать пробелы")
 
-        upper_regex = r"[А-ЯЁ]"
-        lower_regex = r"[а-яё]"
+        upper_regex = r"[А-ЯЁA-Z]"
+        lower_regex = r"[а-яёa-z]"
         symbol_regex = r"[!@#$%^&*]"
         number_regex = r"[0-9]"
         if len(password) < 8 or len(password) > 20:
