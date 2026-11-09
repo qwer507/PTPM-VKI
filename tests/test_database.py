@@ -1,4 +1,3 @@
-import sqlite3
 import unittest
 
 from src.database import Database

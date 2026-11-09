@@ -46,6 +46,13 @@ class Database:
                 return False
             data = [new_message,id_com]
             self.cursor.execute("UPDATE comments SET message = ? WHERE id = ?", data)
+            self.con.commit()
             return True
         except sqlite3.Error:
             return False
+
+if __name__ == "__main__":
+    db = Database()
+    result = db.get_by_name("Lenny_345ᵥ")
+    for user in result:
+        print(user[2])
