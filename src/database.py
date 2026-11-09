@@ -3,7 +3,6 @@ import os
 
 class Database:
     DEFAULT_DB_PATH = os.path.join(os.path.dirname(__file__), "..", "DB", "auth.db")
-    # Сделать исключения, добавить тесты
     def __init__(self, db_path=None):
         if db_path is None:
             db_path = self.DEFAULT_DB_PATH
