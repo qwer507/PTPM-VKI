@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a5c2e78-d3fc-438f-8905-a4f46ec0b8ec" name="Changes" comment="add gitignore">
-      <change afterPath="$PROJECT_DIR$/DB/auth.db" afterDir="false" />
+    <list default="true" id="3a5c2e78-d3fc-438f-8905-a4f46ec0b8ec" name="Changes" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_parser.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +28,77 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "qwer507"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/qwer507/PTPM-VKI.git",
+    "accountId": "85dec482-4c6d-4359-b504-5cf8d50626b8"
+  }
+}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000000084266" />
+      <entry key="S10" value="1.000002902847071" />
+      <entry key="S30" value="1.0142650966751452" />
+      <entry key="S60" value="1.1194477292378133" />
+      <entry key="M2" value="1.3571619708717058" />
+      <entry key="M5" value="2.3998360033703934" />
+      <entry key="M10" value="4.800669064044607" />
+      <entry key="M15" value="6.621755330986243" />
+      <entry key="M30" value="9.484503861619148" />
+      <entry key="H1" value="11.485425079526417" />
+      <entry key="H2" value="12.67088326355261" />
+      <entry key="H4" value="13.31643225975239" />
+      <entry key="D1" value="13.883337516187844" />
+      <entry key="W1" value="13.983265697247361" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.1441669768216907E-109" />
+      <entry key="S2" value="8.734282248717563E-28" />
+      <entry key="S5" value="2.249117814268833E-11" />
+      <entry key="S10" value="6.693505149183006E-6" />
+      <entry key="S30" value="0.02990274365913174" />
+      <entry key="S60" value="0.24454007957009127" />
+      <entry key="M2" value="0.7013806912587084" />
+      <entry key="M5" value="1.4411237793315461" />
+      <entry key="M10" value="2.125764489272479" />
+      <entry key="M15" value="2.537355875469276" />
+      <entry key="M30" value="3.1286657621752547" />
+      <entry key="H1" value="3.5211125465398374" />
+      <entry key="H2" value="3.748507139349265" />
+      <entry key="H4" value="3.871069782794355" />
+      <entry key="D1" value="3.9780540690821975" />
+      <entry key="W1" value="3.996853455305923" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="5.254293040640883E-7" />
+      <entry key="MS500" value="0.055475708579343606" />
+      <entry key="S2" value="0.48531723488477324" />
+      <entry key="S5" value="0.7488766436968015" />
+      <entry key="S10" value="0.8653857001562645" />
+      <entry key="S30" value="0.9963517701440159" />
+      <entry key="S60" value="1.3370204704092439" />
+      <entry key="M2" value="2.04201086113587" />
+      <entry key="M5" value="3.832428616908955" />
+      <entry key="M10" value="6.921318697085751" />
+      <entry key="M15" value="9.155366601042253" />
+      <entry key="M30" value="12.611058485544449" />
+      <entry key="H1" value="15.005403087508451" />
+      <entry key="H2" value="16.418800288012296" />
+      <entry key="H4" value="17.187200832237213" />
+      <entry key="D1" value="17.861340488736403" />
+      <entry key="W1" value="17.980111830589983" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -49,7 +116,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Lab__5"
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "Lab__5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.interpreter.PyWorkspaceStructureConfigurable"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -60,7 +134,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-1f77c24022e5-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.26830.99" />
+        <option value="bundled-python-sdk-9e1d95ea72ba-e0583fc556d1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-263.7307.329" />
       </set>
     </attachedChunks>
   </component>
@@ -114,6 +188,9 @@
     </task>
     <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finish database.py" />
