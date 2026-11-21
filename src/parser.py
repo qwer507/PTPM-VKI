@@ -61,7 +61,8 @@ if __name__ == "__main__":
     db = Database()
 
     test_url = "https://4pda.to/forum/index.php?showtopic=1069995"
-    posts = parser.parse_page(test_url)
+    posts = parser.parse_page("test.html", from_file=True)
+    #posts = parser.parse_page(test_url)
     parser.save_to_db(posts, db)
 
     for post in posts:
