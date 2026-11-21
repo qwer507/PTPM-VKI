@@ -30,6 +30,6 @@ class SimpleCalculatorPage:
         select_elem = Select(self.driver.find_element(*self._SELECT_OPERATION))
         select_elem.select_by_value(op)
 
-    def get_result_text(self):
+    def get_result(self):
         element = self.driver.find_element(*self._RESULT_TEXT)
-        return element.text
+        return element.text.strip()[-1]
