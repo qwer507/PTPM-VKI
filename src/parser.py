@@ -54,16 +54,3 @@ class ForumParser:
     def save_to_db(self, data, repo: Database):
         for message_data in data:
             repo.add(message_data[0], message_data[1], message_data[2])
-
-
-if __name__ == "__main__":
-    parser = ForumParser()
-    db = Database()
-
-    test_url = "https://4pda.to/forum/index.php?showtopic=1069995"
-    posts = parser.parse_page("test.html", from_file=True)
-    #posts = parser.parse_page(test_url)
-    parser.save_to_db(posts, db)
-
-    for post in posts:
-        print(f"ID: {post[0]}, Автор: {post[1]}, Сообщение: {post[2][:120]}...")
