@@ -32,4 +32,8 @@ class SimpleCalculatorPage:
 
     def get_result(self):
         element = self.driver.find_element(*self._RESULT_TEXT)
-        return element.text.strip()[-1]
+        result = element.text.split()[-1]
+        if result == "null":
+            return None
+        else:
+            return float(result)
