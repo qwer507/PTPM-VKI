@@ -9,7 +9,7 @@ class CalculatorTest(unittest.TestCase):
     URL = "https://www.globalsqa.com/angularJs-protractor/SimpleCalculator/"
 
     def setUp(self):
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Chrome()
         self.driver.maximize_window()
         self.driver.get(self.URL)
         self.page = SimpleCalculatorPage(self.driver)
