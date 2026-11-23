@@ -45,7 +45,7 @@ class ForumParser:
             author = author_node.get_text(strip=True) if author_node else ""
 
             msg_node = node.select_one('div.postcolor')
-            message_html = msg_node.decode_contents() if msg_node else ""
+            message_html = msg_node.get_text(strip=True) if msg_node else ""
 
             result.append([post_id, author, message_html])
 
