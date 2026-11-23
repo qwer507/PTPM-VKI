@@ -53,4 +53,7 @@ class ForumParser:
 
     def save_to_db(self, data, repo: Database):
         for message_data in data:
-            repo.add(message_data[0], message_data[1], message_data[2])
+            if repo.get_by_id(message_data[0]):
+                repo.update(message_data[0], message_data[2])
+            else:
+                repo.add(message_data[0], message_data[1], message_data[2])

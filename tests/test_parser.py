@@ -1,6 +1,7 @@
 import unittest
 from pathlib import Path
 from src.parser import ForumParser
+from src.database import Database
 
 class TestDatabase(unittest.TestCase):
     TEST_FILE = Path(__file__).resolve().parent / "test.html"
@@ -22,9 +23,19 @@ class TestDatabase(unittest.TestCase):
 
     def test_find_names(self):
         file = self.TEST_FILE
-        need_id = ["uilavashou","Ivan 2011","Forpdaforpda","S1MASHFM","tranzit-48","Lenny_345"]
+        need_names = ["uilavashou","Ivan 2011","Forpdaforpda","S1MASHFM","tranzit-48","Lenny_345"]
 
         data = self.parser.parse_page(file, from_file=True)
 
         for index, post in enumerate(data):
-            self.assertEqual(post[1], need_id[index])
+            self.assertEqual(post[1], need_names[index])
+
+    def test_save_data(self):
+        db = self.db = Database(db_path=":memory:")
+        file = self.TEST_FILE
+        data = self.parser.parse_page(file, from_file=True)
+
+        self.parser.save_to_db(data,db)
+        result = db.get_by_id(123166495)
+
+        self.assertEqual(result[1],"Forpdaforpda")
